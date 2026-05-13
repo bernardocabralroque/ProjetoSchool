@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="es">
+    <h3>Seja Bem-vindo ao X/Bola!</h3>
+    <p>
+      Jogo feito pelo Simon School</p>
+    <button class="bn" onclick="nivel(1)">JOGAR COM COMPUTADOR </button>
+    <br><br>
+    <button onclick="par(2)" class="bn">JOGAR COM PARCEIRO</button>
+  </div>
+  <div id="jogar2">
+  <br><br><br><br>
+  
+<button id="bt1" onclick="xbola(1)">.</button> 
+<button id="bt2" onclick="xbola(2)">.</button> 
+<button id="bt3" onclick="xbola(3)">.</button>
+<br>
+<button id="bt4" onclick="xbola(4)">.</button>
+<button id="bt5" onclick="xbola(5)">.</button>
+<button id="bt6" onclick="xbola(6)">.</button>
+<br>
+<button id="bt7" onclick="xbola(7)">.</button>
+<button id="bt8" onclick="xbola(8)">.</button>
+<button id="bt9" onclick="xbola(9)">.</button>
+<h2 id="mostrar"></h2>
+<button id="so" onclick="recomecar(1);" class="so">Play</button>
+  </div>
+  
+  <div id="jogar1">
+    <header>
+     <button class="button"><img class="vol" id="imgb" src="back.jpg"></button>
+<p>Máquina VS Humano</p>
+    </header>
+    
+    <br><br><br>
+<button id='eu'>
+  <img class='hum' src="pc.png" >
+</button>
+  <button class="humn">Humano</button>
+<br>
+<button id="bpc1" onclick="xbola1(1)">.</button>
+<button id="bpc2" onclick="xbola1(2)">.</button>
+<button id="bpc3" onclick="xbola1(3)">.</button>
+<br>
+<button id="bpc4" onclick="xbola1(4)">.</button>
+<button id="bpc5" onclick="xbola1(5)">.</button>
+<button id="bpc6" onclick="xbola1(6)">.</button>
+<br>
+<button id="bpc7" onclick="xbola1(7)">.</button>
+<button id="bpc8" onclick="xbola1(8)">.</button>
+<button id="bpc9" onclick="xbola1(9)">.</button>
+<br>
+<button id="maq">
+  <button class="cpab">Máquina</button>
+  <img  class="cpa" src='maq.png'>
+ 
+</button>
+<br><br>
+<h4 id="mostra1"></h4>
+<button id="so1" onclick="recomecar(2);" class="so">Jogar</button>
+<button id="ven" class="vencedor">ponto</button>
+<button id="imp">empate</button>
+<button id="der" class="derrota">ponto</button>
+  </div>
+  <div id="nivel" style="display: none">
+    <h4>Nivel</h4>
+    <button id="facil" onclick="nivel(2)">Facil</button>
+    <button id="div" onclick="nivel(3)">Difícil</button>
+  </div>
+<script src="main.js"></script>
+<script src="xbola.js"></script>
+</body>
+
+</html>
